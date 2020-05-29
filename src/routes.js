@@ -8,9 +8,11 @@ import New from './Pages/New';
 export default function Routes(){
     return (
         <BrowserRouter>
-            <Route path="/" exact component={ Login } />
-            <Route path="/dashboard" component={ Dashboard } />
-            <Route path="/new" component={ New } />
+            <Switch>
+                <Route path="/" exact component={ Login } />
+                <Route path="/dashboard" component={ Dashboard } />
+                <Route path="/new" component={ New } />
+            </Switch>    
         </BrowserRouter>
     )
 }
